@@ -2,7 +2,7 @@
 
 Compute the **6-day average max temperature** for **Salt Lake City**, **Los Angeles**, and **Boise** using the [WeatherAPI](https://www.weatherapi.com/) forecast endpoint, and print the results.
 
-Example (Numbers will vary):
+Example of output:
 ```
 Salt Lake City Average Max Temp: 35.73
 Los Angeles Average Max Temp: 29.84
@@ -26,7 +26,7 @@ Boise Average Max Temp: 32.63
 ```bash
 git clone https://github.com/alexneme/weather-avg-temp.git
 cd weather-avg-temp
-python -m venv .venv && source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install -e .
 ```
 
@@ -46,7 +46,7 @@ WEATHERAPI_KEY="your_api_key_here"
 ## Run
 
 ```bash
-python -m weatheravg.cli
+python3 -m weatheravg.cli
 ```
 
 **What it does**
