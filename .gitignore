@@ -4,3 +4,4 @@ __pycache__/
 .pytest_cache/
 .env
 /src/weather_avg_temp*
+logs/
