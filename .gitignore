@@ -1,7 +1,45 @@
-.venv/
+# Python
 __pycache__/
-*.pyc
-.pytest_cache/
+*.py[cod]
+*.pyo
+*.so
+.venv/
+venv/
 .env
-/src/weather_avg_temp*
+.env.* 
+*.env
+
+# Airflow runtime artifacts
 logs/
+!logs/.gitkeep
+airflow.db
+airflow.cfg
+webserver_config.py
+*.pid
+
+# Docker Compose
+docker-compose.override.yml
+*.log
+
+# Tests/linters
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Editors/OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Misc
+.ipynb_checkpoints/
+.cache/
