@@ -2,7 +2,11 @@
 name = "weather-avg-temp"
 version = "0.1.0"
 requires-python = ">=3.10"
-dependencies = ["requests>=2.32.0", "pytest>=8", "python-dotenv>=1.0.0"]
+dependencies = ["requests>=2.32.0","python-dotenv>=1.0.0",]
 
-[tool.pytest.ini_options]
-pythonpath = ["src"]
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
